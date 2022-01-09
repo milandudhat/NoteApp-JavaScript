@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <link rel="stylesheet" href="/Notes/style.css">
+
+    <title>OneNotes</title>
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            OneNote
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </a>
+        </div>
+      </nav> -->
+
+    <nav class="navbar mx-auto mw-100  navbar-dark bg-dark">
+        <div class="container-lg ">
+            <h4>
+            <a class="navbar-brand" href="index.html">
+                <i class="fa fa-comments" aria-hidden="true"></i> OneNote 
+            </a>
+
+        </h4>
+            <!-- <form class=""> -->
+            <div id="search" class="d-flex">
+                <input id="search-txt" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                <!-- </form> -->
+                <button id="addnotes" class="btn btn-outline-success d-flex mx-2" type="button"><i class="bi bi-plus-lg"></i> Notes</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="fill_data" class="alert alert-danger" role="alert" style="display: none;">
+        <i class="bi bi-exclamation-square mr-2"></i> Please enter the all field value try again ..
+        </div>
+
+    <div id="delete_data" class="alert alert-danger" role="alert" style="display: none;">
+        <i class="bi bi-x-square mr-2"></i> Your note delete successfully ..
+    </div>
+
+    <div id="success_data" class="alert alert-success" role="alert" style="display: none;">
+        <i class="bi bi-check-square mr-2"></i> Your note Add successfully ..
+    </div>
+
+    <div id="update_note" class="alert alert-primary" role="alert" style="display: none;">
+        <i class="bi bi-check-square mr-2"></i> Your note Update successfully ..
+    </div>
+
+    <div class="container-sm px-4 my-4 card" id="Note-main-container" style="display: none;">
+
+        <form>
+            <div class="mb-3 py-2 ">
+                <h3>Add Notes</h3>
+                <input type="text" class="form-control" id="title" placeholder="Add title">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="content" rows="3" placeholder="Add content"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary my-2" id="save-btn">Save</button>
+                <button type="button" class="btn btn-primary my-2 close-btn">Close</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div class="container-sm px-4 my-4" id="alert-cont">
+        <hr>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">You don't have any notes</h4>
+            <hr>
+            <p class="mb-0">Enter Notes in OneNote book app</p>
+        </div>
+    </div> -->
+
+    <div id="notes" class="row container-fluid"> </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="/Notes/main.js"></script>
+</body>
+
+</html>
